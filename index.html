@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Simple HTML Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f2f2f2;
-      text-align: center;
-    }
-    img {
-      max-width: 300px;
-      margin-top: 20px;
-    }
-  </style>
+  <title>Styled Form</title>
 </head>
-<body>
-  <h1>Welcome to My Simple Page</h1>
-  <p>This is a basic HTML file. You can edit it and add more elements as you wish.</p>
-  <img src="https://via.placeholder.com/300x200.png?text=Sample+Image" alt="Sample">
+<body style="font-family: Arial, sans-serif; background-color: #f0f4f8; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+  <form style="background: white; padding: 30px 40px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 100%; max-width: 400px;">
+    <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Contact Us</h2>
+
+    <label for="name" style="display: block; margin-bottom: 5px; color: #555;">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required
+           style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+
+    <label for="email" style="display: block; margin-bottom: 5px; color: #555;">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email" required
+           style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+
+    <label for="message" style="display: block; margin-bottom: 5px; color: #555;">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Write something..." required
+              style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; resize: vertical;"></textarea>
+
+    <button type="submit"
+            style="margin-top: 20px; width: 100%; background-color: #007BFF; color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+      Submit
+    </button>
+  </form>
+
 </body>
 </html>
